@@ -10,10 +10,10 @@ const Calculator = () => {
     };
 
     return (
-        <>
+        <div className="min-h-[737px] mb-16">
             <div
                 id="background"
-                className="absolute z-[-10] top-0 left-6 rounded-b-[35px] w-full max-w-[978px] h-[737px] bg-gradient-to-br from-[#D6E6FE00] to-[#D6E6FEFF]"
+                className="absolute z-[-10] top-0 left-[100px] rounded-b-[35px] w-full max-w-[978px] h-[737px] bg-gradient-to-br from-[#D6E6FE00] to-[#D6E6FEFF]"
             ></div>
             <div className="max-w-[564px] mt-[70px] ml-[140px]">
                 <img src={logo} alt="" className="w-16 h-16 mb-[127px]" />
@@ -87,7 +87,7 @@ const Calculator = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 

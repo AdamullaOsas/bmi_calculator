@@ -20,7 +20,7 @@ const Calculator = () => {
                 <h1 className="headingXL mb-8 tracking-[-5%] pr-20">
                     Body Mass Index Calculator
                 </h1>
-                <p className="body text-electircBlue max-w-[465px]">
+                <p className="body text-electricBlue max-w-[465px]">
                     Better understand your weight in relation to your height
                     using our body mass index (BMI) calculator. While BMI is not
                     the sole determinant of a healthy weight, it offers a

@@ -6,7 +6,7 @@ module.exports = {
             colors: {
                 blue: "#345FF6",
                 gunmetal: "#253347",
-                electircBlue: "#5E6E85",
+                electricBlue: "#5E6E85",
             },
         },
     },

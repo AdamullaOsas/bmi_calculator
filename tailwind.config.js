@@ -8,6 +8,9 @@ module.exports = {
                 gunmetal: "#253347",
                 electricBlue: "#5E6E85",
             },
+            screens: {
+                lg: "1320px",
+            },
         },
     },
     plugins: [],

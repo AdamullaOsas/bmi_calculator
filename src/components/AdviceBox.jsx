@@ -23,12 +23,17 @@ const boxes = [
 
 const AdviceBox = () => {
     return (
-        <div className="bg-gradient-to-br from-[#D6E6FE00] to-[#D6E6FE40] h-[402px] max-w-[1392px] mx-auto flex gap-8 rounded-[35px] pt-[72px] px-[117px] pb-[96px]">
+        <div className="bg-gradient-to-br from-[#D6E6FE00] to-[#D6E6FE40] lg:max-h-[402px] h-full max-w-[1392px] mx-auto flex gap-8 rounded-[35px] lg:pt-[72px] lg:px-[117px] px-5 md:px-10 py-[60px] lg:pb-[96px] w-full lg:flex-row flex-col">
             {boxes.map((box, index) => (
-                <div className="max-w-[365px]">
-                    <img src={box.image} alt="" className="mb-[45px]" />
-                    <h1 className="headingM mb-6">{box.title}</h1>
-                    <p className="body text-electricBlue">{box.desc}</p>
+                <div
+                    className="lg:max-w-[365px] flex lg:flex-col flex-row gap-[40px] items-center lg:items-start"
+                    key={index}
+                >
+                    <img src={box.image} alt="" className="size-16" />
+                    <div className="flex flex-col">
+                        <h1 className="headingM mb-6">{box.title}</h1>
+                        <p className="body text-electricBlue">{box.desc}</p>
+                    </div>
                 </div>
             ))}
         </div>

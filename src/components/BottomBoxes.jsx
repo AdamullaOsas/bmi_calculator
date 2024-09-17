@@ -4,6 +4,7 @@ import age from "../assets/images/icon-age.svg";
 import muscle from "../assets/images/icon-muscle.svg";
 import pregnancy from "../assets/images/icon-pregnancy.svg";
 import race from "../assets/images/icon-race.svg";
+import curve from "../assets/images/pattern-curved-line-right.svg";
 
 const data = [
     {
@@ -35,9 +36,9 @@ const data = [
 
 const BottomBoxes = () => {
     return (
-        <div className="max-w-[1160px] w-full flex flex-col mt-[120px] mx-auto gap-8">
-            <div className="flex gap-[132px]">
-                <div className="max-w-[564px]">
+        <div className="max-w-[1160px] w-full flex flex-col lg:mt-[120px] py-[72px] md:pb-0 lg:py-0 mx-auto gap-8">
+            <div className="flex flex-col lg:flex-row lg:gap-[132px] items-center">
+                <div className="max-w-[564px] lg:text-start text-center mx-auto">
                     <h1 className="headingL mb-8">Limitations of BMI</h1>
                     <p className="body text-electricBlue">
                         Although BMI is often a practical indicator of healthy
@@ -53,7 +54,13 @@ const BottomBoxes = () => {
                     desc={data[0].desc}
                 />
             </div>
-            <div className="flex gap-8 justify-end">
+
+            <div className="flex flex-col md:flex-row gap-8 lg:justify-end justify-center relative items-center">
+                <img
+                    src={curve}
+                    alt=""
+                    className="hidden lg:block lg:absolute top-[-12px] left-[165px]"
+                />
                 <Box
                     image={data[1].image}
                     title={data[1].title}
@@ -66,7 +73,7 @@ const BottomBoxes = () => {
                 />
             </div>
 
-            <div className="flex gap-8 justify-center mb-[120px]">
+            <div className="flex flex-col md:flex-row gap-8 justify-center mb-[120px] items-center">
                 <Box
                     image={data[3].image}
                     title={data[3].title}
@@ -84,9 +91,9 @@ const BottomBoxes = () => {
 
 const Box = ({ image, title, desc }) => {
     return (
-        <div className="flex flex-col max-w-[365px] p-8 gap-4 rounded-2xl shadow-2xl">
+        <div className="flex flex-col max-w-[365px] p-8 gap-4 rounded-2xl shadow-2xl bg-white">
             <div className="flex items-center gap-4">
-                <img src={image} alt="" className="size-8" />
+                <img src={image} alt="" className="w-8 h-8" />
                 <h1 className="headingS">{title}</h1>
             </div>
             <p className="body text-electricBlue">{desc}</p>
